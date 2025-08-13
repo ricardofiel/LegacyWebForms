@@ -533,27 +533,30 @@ function ValidationSummaryOnSubmit(validationGroup) {
                 if (typeof(summary.headertext) == "string") {
                     s += summary.headertext + "\r\n";
                 }
-                var lastValIndex = Page_Validators.length - 1;
-                for (i=0; i<=lastValIndex; i++) {
+                var invalidMessages = [];
+                for (i=0; i<Page_Validators.length; i++) {
                     if (!Page_Validators[i].isvalid && typeof(Page_Validators[i].errormessage) == "string") {
-                        switch (summary.displaymode) {
-                            case "List":
-                                s += Page_Validators[i].errormessage;
-                                if (i < lastValIndex) {
-                                    s += "\r\n";
-                                }
-                                break;
-                            case "BulletList":
-                            default:
-                                s += "- " + Page_Validators[i].errormessage;
-                                if (i < lastValIndex) {
-                                    s += "\r\n";
-                                }
-                                break;
-                            case "SingleParagraph":
-                                s += Page_Validators[i].errormessage + " ";
-                                break;
-                        }
+                        invalidMessages.push(Page_Validators[i].errormessage);
+                    }
+                }
+                for (i=0; i<invalidMessages.length; i++) {
+                    switch (summary.displaymode) {
+                        case "List":
+                            s += invalidMessages[i];
+                            if (i < invalidMessages.length - 1) {
+                                s += "\r\n";
+                            }
+                            break;
+                        case "BulletList":
+                        default:
+                            s += "- " + invalidMessages[i];
+                            if (i < invalidMessages.length - 1) {
+                                s += "\r\n";
+                            }
+                            break;
+                        case "SingleParagraph":
+                            s += invalidMessages[i] + " ";
+                            break;
                     }
                 }
                 alert(s);
