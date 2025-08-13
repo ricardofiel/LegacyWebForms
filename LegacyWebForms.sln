@@ -1,25 +1,22 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35931.197 d17.13
+VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LegacyWebForms", "LegacyWebForms.csproj", "{EC11B841-3F73-42A6-8F5D-50668C6A8E47}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LegacyWebForms", "LegacyWebForms.csproj", "{513908C6-AD15-4D7D-86FB-69363C4AFB52}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{EC11B841-3F73-42A6-8F5D-50668C6A8E47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EC11B841-3F73-42A6-8F5D-50668C6A8E47}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EC11B841-3F73-42A6-8F5D-50668C6A8E47}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EC11B841-3F73-42A6-8F5D-50668C6A8E47}.Release|Any CPU.Build.0 = Release|Any CPU
-	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {2FBF4501-18C7-49C4-A12B-D490D961999D}
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{513908C6-AD15-4D7D-86FB-69363C4AFB52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{513908C6-AD15-4D7D-86FB-69363C4AFB52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{513908C6-AD15-4D7D-86FB-69363C4AFB52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{513908C6-AD15-4D7D-86FB-69363C4AFB52}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
