@@ -7,8 +7,17 @@ using System.Web.UI.WebControls;
 
 namespace LegacyWebForms
 {
+    /// <summary>
+    /// Code-behind class for the Contact page.
+    /// Displays contact information for the organization.
+    /// </summary>
     public partial class Contact : Page
     {
+        /// <summary>
+        /// Handles the Page_Load event, which fires when the page is loaded.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">Event arguments.</param>
         protected void Page_Load(object sender, EventArgs e)
         {
 
