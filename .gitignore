@@ -3,6 +3,9 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/main/VisualStudio.gitignore
 
+# Old Web Forms backup directory
+.old_webforms/
+
 # User-specific files
 *.rsuser
 *.suo
