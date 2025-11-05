@@ -13,5 +13,19 @@ namespace LegacyWebForms
         {
 
         }
+
+        protected void btnSubmit_Click(object sender, EventArgs e)
+        {
+            // Store the submitted values
+            lblFromValue.Text = txtFrom.Text;
+            lblEmailValue.Text = txtEmail.Text;
+            lblMessageValue.Text = txtMessage.Text;
+            
+            // Hide the form
+            pnlForm.Visible = false;
+            
+            // Show the submitted values panel
+            pnlSubmittedValues.Visible = true;
+        }
     }
 }
