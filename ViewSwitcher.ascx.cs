@@ -9,14 +9,33 @@ using Microsoft.AspNet.FriendlyUrls.Resolvers;
 
 namespace LegacyWebForms
 {
+    /// <summary>
+    /// User control that provides a view switcher between Mobile and Desktop views.
+    /// Allows users to toggle between different rendering modes based on device type.
+    /// </summary>
     public partial class ViewSwitcher : System.Web.UI.UserControl
     {
+        /// <summary>
+        /// Gets the current view mode (Mobile or Desktop).
+        /// </summary>
         protected string CurrentView { get; private set; }
 
+        /// <summary>
+        /// Gets the alternate view mode that the user can switch to.
+        /// </summary>
         protected string AlternateView { get; private set; }
 
+        /// <summary>
+        /// Gets the URL for switching to the alternate view.
+        /// </summary>
         protected string SwitchUrl { get; private set; }
 
+        /// <summary>
+        /// Handles the Page_Load event. Determines the current view mode,
+        /// calculates the alternate view, and generates the switch URL.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">Event arguments.</param>
         protected void Page_Load(object sender, EventArgs e)
         {
             // Determine current view

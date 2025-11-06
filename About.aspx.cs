@@ -7,8 +7,17 @@ using System.Web.UI.WebControls;
 
 namespace LegacyWebForms
 {
+    /// <summary>
+    /// Code-behind class for the About page.
+    /// Provides information about the application.
+    /// </summary>
     public partial class About : Page
     {
+        /// <summary>
+        /// Handles the Page_Load event, which fires when the page is loaded.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">Event arguments.</param>
         protected void Page_Load(object sender, EventArgs e)
         {
 
