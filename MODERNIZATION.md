@@ -226,7 +226,7 @@ LegacyWebForms/
 | Antlr | 3.5.0.2 | Parser (WebGrease dependency) | Not needed |
 | bootstrap | 5.2.3 | UI Framework | Keep or update |
 | jQuery | 3.7.0 | JavaScript Library | Keep or update |
-| Microsoft.AspNet.FriendlyUrls | 1.0.2 | Clean URLs | Use attribute routing |
+| Microsoft.AspNet.FriendlyUrls* | 1.0.2 | Clean URLs | Not needed - built-in routing |
 | Microsoft.AspNet.ScriptManager.MSAjax | 5.0.0 | AJAX Framework | Not needed |
 | Microsoft.AspNet.ScriptManager.WebForms | 5.0.0 | WebForms Scripts | Not needed |
 | Microsoft.AspNet.Web.Optimization | 1.1.3 | Bundling | WebOptimizer or npm |
@@ -235,6 +235,8 @@ LegacyWebForms/
 | Modernizr | 2.8.3 | Browser Detection | May not be needed |
 | Newtonsoft.Json | 13.0.3 | JSON | System.Text.Json or keep |
 | WebGrease | 1.6.0 | CSS/JS optimization | Not needed |
+
+\* Includes Microsoft.AspNet.FriendlyUrls.Core
 
 ### Assembly References
 - System.Web (WebForms core)
@@ -686,13 +688,14 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
-COPY ["LegacyWebForms.Modern.csproj", "."]
-RUN dotnet restore
+COPY ["LegacyWebForms.Modern/LegacyWebForms.Modern.csproj", "LegacyWebForms.Modern/"]
+RUN dotnet restore "LegacyWebForms.Modern/LegacyWebForms.Modern.csproj"
 COPY . .
-RUN dotnet build -c Release -o /app/build
+WORKDIR "/src/LegacyWebForms.Modern"
+RUN dotnet build "LegacyWebForms.Modern.csproj" -c Release -o /app/build
 
 FROM build AS publish
-RUN dotnet publish -c Release -o /app/publish
+RUN dotnet publish "LegacyWebForms.Modern.csproj" -c Release -o /app/publish
 
 FROM base AS final
 WORKDIR /app
@@ -749,9 +752,9 @@ Once migrated, consider these enhancements:
 
 ## Resources
 
-- [Migrate from ASP.NET to ASP.NET Core](https://docs.microsoft.com/aspnet/core/migration/proper-to-2x/)
-- [Introduction to Razor Pages](https://docs.microsoft.com/aspnet/core/razor-pages/)
-- [Tag Helpers in ASP.NET Core](https://docs.microsoft.com/aspnet/core/mvc/views/tag-helpers/)
+- [Migrate from ASP.NET to ASP.NET Core](https://learn.microsoft.com/aspnet/core/migration/proper-to-2x/)
+- [Introduction to Razor Pages](https://learn.microsoft.com/aspnet/core/razor-pages/)
+- [Tag Helpers in ASP.NET Core](https://learn.microsoft.com/aspnet/core/mvc/views/tag-helpers/)
 - [Bootstrap 5 Documentation](https://getbootstrap.com/docs/5.2/)
 
 ---
