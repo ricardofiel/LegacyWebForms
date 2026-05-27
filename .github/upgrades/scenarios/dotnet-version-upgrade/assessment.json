@@ -1,0 +1,565 @@
+{
+  "settings": {
+    "components": {
+      "code": true,
+      "binaries": false
+    },
+    "targetId": "net10.0",
+    "targetDisplayName": ".NETCoreApp,Version=v10.0"
+  },
+  "analysisStartTime": "2026-05-27T08:11:26.41778Z",
+  "analysisEndTime": "2026-05-27T08:11:27.2900274Z",
+  "privacyModeHelpUrl": "https://go.microsoft.com/fwlink/?linkid=2270980",
+  "stats": {
+    "summary": {
+      "projects": 1,
+      "issues": 9,
+      "incidents": 17,
+      "effort": 17
+    },
+    "charts": {
+      "severity": {
+        "Mandatory": 13,
+        "Optional": 1,
+        "Potential": 3,
+        "Information": 0
+      },
+      "category": {
+        "NuGet": 11,
+        "Project": 2,
+        "Feature": 1,
+        "Binding": 3
+      }
+    }
+  },
+  "projects": [
+    {
+      "path": "LegacyWebForms.csproj",
+      "startingProject": true,
+      "issues": 9,
+      "storyPoints": 17,
+      "properties": {
+        "appName": "LegacyWebForms",
+        "projectKind": "Wap",
+        "frameworks": [
+          "net472"
+        ],
+        "languages": [
+          "C#"
+        ],
+        "tools": [
+          "MSBuild"
+        ],
+        "isSdkStyle": false,
+        "numberOfFiles": 99,
+        "numberOfCodeFiles": 16,
+        "linesTotal": 82829,
+        "linesOfCode": 510,
+        "totalApiScanned": 0,
+        "minLinesOfCodeToChange": 0,
+        "maxLinesOfCodeToChange": 0
+      },
+      "ruleInstances": [
+        {
+          "incidentId": "56cf8855-2a0d-400c-aeae-d4ab4102bc66",
+          "ruleId": "NuGet.0002",
+          "projectPath": "LegacyWebForms.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Antlr, 3.5.0.2\n\nRecommendation:\n\nRemove Antlr, and replace with new package Antlr4 4.6.6",
+              "protected": "Antlr, 3.5.0.2\n\nRecommendation:\n\nRemove Antlr, and replace with new package Antlr4 4.6.6"
+            },
+            "kind": "File",
+            "path": "LegacyWebForms.csproj",
+            "snippet": "Antlr, 3.5.0.2\n\nRecommendation:\n\nRemove Antlr, and replace with new package Antlr4 4.6.6",
+            "protectedSnippet": "Antlr, 3.5.0.2\n\nRecommendation:\n\nRemove Antlr, and replace with new package Antlr4 4.6.6",
+            "label": "Antlr 3.5.0.2",
+            "properties": {
+              "PackageId": "Antlr",
+              "PackageVersion": "3.5.0.2",
+              "PackageNewVersion": null,
+              "PackageReplacements": "Replace with new package Antlr4=4.6.6"
+            }
+          }
+        },
+        {
+          "incidentId": "c1d8c86c-6425-4aa1-9e74-27896e3fe63e",
+          "ruleId": "NuGet.0001",
+          "projectPath": "LegacyWebForms.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.AspNet.FriendlyUrls, 1.0.2\n\nRecommendation:\n\nNo supported version found",
+              "protected": "Microsoft.AspNet.FriendlyUrls, 1.0.2\n\nRecommendation:\n\nNo supported version found"
+            },
+            "kind": "File",
+            "path": "LegacyWebForms.csproj",
+            "snippet": "Microsoft.AspNet.FriendlyUrls, 1.0.2\n\nRecommendation:\n\nNo supported version found",
+            "protectedSnippet": "Microsoft.AspNet.FriendlyUrls, 1.0.2\n\nRecommendation:\n\nNo supported version found",
+            "label": "Microsoft.AspNet.FriendlyUrls 1.0.2",
+            "properties": {
+              "PackageId": "Microsoft.AspNet.FriendlyUrls",
+              "PackageVersion": "1.0.2",
+              "PackageNewVersion": null,
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "4f36dd84-a653-413f-af50-ea5ec4ce75cc",
+          "ruleId": "NuGet.0001",
+          "projectPath": "LegacyWebForms.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.AspNet.FriendlyUrls.Core, 1.0.2\n\nRecommendation:\n\nNo supported version found",
+              "protected": "Microsoft.AspNet.FriendlyUrls.Core, 1.0.2\n\nRecommendation:\n\nNo supported version found"
+            },
+            "kind": "File",
+            "path": "LegacyWebForms.csproj",
+            "snippet": "Microsoft.AspNet.FriendlyUrls.Core, 1.0.2\n\nRecommendation:\n\nNo supported version found",
+            "protectedSnippet": "Microsoft.AspNet.FriendlyUrls.Core, 1.0.2\n\nRecommendation:\n\nNo supported version found",
+            "label": "Microsoft.AspNet.FriendlyUrls.Core 1.0.2",
+            "properties": {
+              "PackageId": "Microsoft.AspNet.FriendlyUrls.Core",
+              "PackageVersion": "1.0.2",
+              "PackageNewVersion": null,
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "d6cb6163-29d6-4a43-a4d2-be16591228fd",
+          "ruleId": "NuGet.0001",
+          "projectPath": "LegacyWebForms.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.AspNet.ScriptManager.MSAjax, 5.0.0\n\nRecommendation:\n\nNo supported version found",
+              "protected": "Microsoft.AspNet.ScriptManager.MSAjax, 5.0.0\n\nRecommendation:\n\nNo supported version found"
+            },
+            "kind": "File",
+            "path": "LegacyWebForms.csproj",
+            "snippet": "Microsoft.AspNet.ScriptManager.MSAjax, 5.0.0\n\nRecommendation:\n\nNo supported version found",
+            "protectedSnippet": "Microsoft.AspNet.ScriptManager.MSAjax, 5.0.0\n\nRecommendation:\n\nNo supported version found",
+            "label": "Microsoft.AspNet.ScriptManager.MSAjax 5.0.0",
+            "properties": {
+              "PackageId": "Microsoft.AspNet.ScriptManager.MSAjax",
+              "PackageVersion": "5.0.0",
+              "PackageNewVersion": null,
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "fd4c95a5-4262-46e5-ba9c-cd0979c4b575",
+          "ruleId": "NuGet.0001",
+          "projectPath": "LegacyWebForms.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.AspNet.ScriptManager.WebForms, 5.0.0\n\nRecommendation:\n\nNo supported version found",
+              "protected": "Microsoft.AspNet.ScriptManager.WebForms, 5.0.0\n\nRecommendation:\n\nNo supported version found"
+            },
+            "kind": "File",
+            "path": "LegacyWebForms.csproj",
+            "snippet": "Microsoft.AspNet.ScriptManager.WebForms, 5.0.0\n\nRecommendation:\n\nNo supported version found",
+            "protectedSnippet": "Microsoft.AspNet.ScriptManager.WebForms, 5.0.0\n\nRecommendation:\n\nNo supported version found",
+            "label": "Microsoft.AspNet.ScriptManager.WebForms 5.0.0",
+            "properties": {
+              "PackageId": "Microsoft.AspNet.ScriptManager.WebForms",
+              "PackageVersion": "5.0.0",
+              "PackageNewVersion": null,
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "3a821a93-4204-469f-b089-c85e9fafec9b",
+          "ruleId": "NuGet.0001",
+          "projectPath": "LegacyWebForms.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.AspNet.Web.Optimization, 1.1.3\n\nRecommendation:\n\nNo supported version found",
+              "protected": "Microsoft.AspNet.Web.Optimization, 1.1.3\n\nRecommendation:\n\nNo supported version found"
+            },
+            "kind": "File",
+            "path": "LegacyWebForms.csproj",
+            "snippet": "Microsoft.AspNet.Web.Optimization, 1.1.3\n\nRecommendation:\n\nNo supported version found",
+            "protectedSnippet": "Microsoft.AspNet.Web.Optimization, 1.1.3\n\nRecommendation:\n\nNo supported version found",
+            "label": "Microsoft.AspNet.Web.Optimization 1.1.3",
+            "properties": {
+              "PackageId": "Microsoft.AspNet.Web.Optimization",
+              "PackageVersion": "1.1.3",
+              "PackageNewVersion": null,
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "9b758a97-13f2-4663-801c-f26192ac2217",
+          "ruleId": "NuGet.0001",
+          "projectPath": "LegacyWebForms.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.AspNet.Web.Optimization.WebForms, 1.1.3\n\nRecommendation:\n\nNo supported version found",
+              "protected": "Microsoft.AspNet.Web.Optimization.WebForms, 1.1.3\n\nRecommendation:\n\nNo supported version found"
+            },
+            "kind": "File",
+            "path": "LegacyWebForms.csproj",
+            "snippet": "Microsoft.AspNet.Web.Optimization.WebForms, 1.1.3\n\nRecommendation:\n\nNo supported version found",
+            "protectedSnippet": "Microsoft.AspNet.Web.Optimization.WebForms, 1.1.3\n\nRecommendation:\n\nNo supported version found",
+            "label": "Microsoft.AspNet.Web.Optimization.WebForms 1.1.3",
+            "properties": {
+              "PackageId": "Microsoft.AspNet.Web.Optimization.WebForms",
+              "PackageVersion": "1.1.3",
+              "PackageNewVersion": null,
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "65ec41eb-5940-40d1-bf28-c0caeb932628",
+          "ruleId": "NuGet.0003",
+          "projectPath": "LegacyWebForms.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.CodeDom.Providers.DotNetCompilerPlatform, 2.0.1\n\nRecommendation:\n\nPackage functionality included with new framework reference",
+              "protected": "Microsoft.CodeDom.Providers.DotNetCompilerPlatform, 2.0.1\n\nRecommendation:\n\nPackage functionality included with new framework reference"
+            },
+            "kind": "File",
+            "path": "LegacyWebForms.csproj",
+            "snippet": "Microsoft.CodeDom.Providers.DotNetCompilerPlatform, 2.0.1\n\nRecommendation:\n\nPackage functionality included with new framework reference",
+            "protectedSnippet": "Microsoft.CodeDom.Providers.DotNetCompilerPlatform, 2.0.1\n\nRecommendation:\n\nPackage functionality included with new framework reference",
+            "label": "Microsoft.CodeDom.Providers.DotNetCompilerPlatform 2.0.1",
+            "properties": {
+              "PackageId": "Microsoft.CodeDom.Providers.DotNetCompilerPlatform",
+              "PackageVersion": "2.0.1",
+              "PackageNewVersion": null,
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "b752569c-867e-41e6-8996-654062903537",
+          "ruleId": "NuGet.0003",
+          "projectPath": "LegacyWebForms.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.Web.Infrastructure, 2.0.0\n\nRecommendation:\n\nPackage functionality included with new framework reference",
+              "protected": "Microsoft.Web.Infrastructure, 2.0.0\n\nRecommendation:\n\nPackage functionality included with new framework reference"
+            },
+            "kind": "File",
+            "path": "LegacyWebForms.csproj",
+            "snippet": "Microsoft.Web.Infrastructure, 2.0.0\n\nRecommendation:\n\nPackage functionality included with new framework reference",
+            "protectedSnippet": "Microsoft.Web.Infrastructure, 2.0.0\n\nRecommendation:\n\nPackage functionality included with new framework reference",
+            "label": "Microsoft.Web.Infrastructure 2.0.0",
+            "properties": {
+              "PackageId": "Microsoft.Web.Infrastructure",
+              "PackageVersion": "2.0.0",
+              "PackageNewVersion": null,
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "9a61ddef-759b-468d-b02a-fcf298e40935",
+          "ruleId": "NuGet.0002",
+          "projectPath": "LegacyWebForms.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Newtonsoft.Json, 13.0.3\n\nRecommendation:\n\nRemove Newtonsoft.Json, and replace with new package Newtonsoft.Json 13.0.4",
+              "protected": "Newtonsoft.Json, 13.0.3\n\nRecommendation:\n\nRemove Newtonsoft.Json, and replace with new package Newtonsoft.Json 13.0.4"
+            },
+            "kind": "File",
+            "path": "LegacyWebForms.csproj",
+            "snippet": "Newtonsoft.Json, 13.0.3\n\nRecommendation:\n\nRemove Newtonsoft.Json, and replace with new package Newtonsoft.Json 13.0.4",
+            "protectedSnippet": "Newtonsoft.Json, 13.0.3\n\nRecommendation:\n\nRemove Newtonsoft.Json, and replace with new package Newtonsoft.Json 13.0.4",
+            "label": "Newtonsoft.Json 13.0.3",
+            "properties": {
+              "PackageId": "Newtonsoft.Json",
+              "PackageVersion": "13.0.3",
+              "PackageNewVersion": "13.0.4",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "c7a7b11f-89ed-40be-b6fc-7addb791c811",
+          "ruleId": "NuGet.0005",
+          "projectPath": "LegacyWebForms.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.AspNet.Web.Optimization, 1.1.3\n\nRecommendation:\n\nShould be replaced.\nRemove Microsoft.AspNet.Web.Optimization, and replace with new package LigerShark.WebOptimizer.Core, 3.0.477",
+              "protected": "Microsoft.AspNet.Web.Optimization, 1.1.3\n\nRecommendation:\n\nShould be replaced.\nRemove Microsoft.AspNet.Web.Optimization, and replace with new package LigerShark.WebOptimizer.Core, 3.0.477"
+            },
+            "kind": "File",
+            "path": "LegacyWebForms.csproj",
+            "snippet": "Microsoft.AspNet.Web.Optimization, 1.1.3\n\nRecommendation:\n\nShould be replaced.\nRemove Microsoft.AspNet.Web.Optimization, and replace with new package LigerShark.WebOptimizer.Core, 3.0.477",
+            "protectedSnippet": "Microsoft.AspNet.Web.Optimization, 1.1.3\n\nRecommendation:\n\nShould be replaced.\nRemove Microsoft.AspNet.Web.Optimization, and replace with new package LigerShark.WebOptimizer.Core, 3.0.477",
+            "label": "Microsoft.AspNet.Web.Optimization 1.1.3",
+            "properties": {
+              "PackageId": "Microsoft.AspNet.Web.Optimization",
+              "PackageVersion": "1.1.3",
+              "PackageNewVersion": null,
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "50c160ca-0e99-470c-a71e-3120e7f1c03e",
+          "ruleId": "Project.0001",
+          "projectPath": "LegacyWebForms.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "File",
+            "path": "LegacyWebForms.csproj"
+          }
+        },
+        {
+          "incidentId": "327ab204-70b1-4c7f-9bac-58c5d0d27ecd",
+          "ruleId": "Project.0002",
+          "projectPath": "LegacyWebForms.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Current target framework: .NETFramework,Version=v4.7.2\nRecommended target framework: net10.0",
+              "protected": "Current target framework: .NETFramework,Version=v4.7.2\nRecommended target framework: net10.0"
+            },
+            "kind": "File",
+            "path": "LegacyWebForms.csproj",
+            "snippet": "Current target framework: .NETFramework,Version=v4.7.2\nRecommended target framework: net10.0",
+            "protectedSnippet": "Current target framework: .NETFramework,Version=v4.7.2\nRecommended target framework: net10.0",
+            "properties": {
+              "CurrentTargetFramework": ".NETFramework,Version=v4.7.2",
+              "RecommendedTargetFramework": "net10.0"
+            }
+          }
+        },
+        {
+          "incidentId": "03204023-e7a6-4b57-bfd3-1a9c10514c43",
+          "ruleId": "Feature.1000",
+          "projectPath": "LegacyWebForms.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "File",
+            "path": "Global.asax.cs"
+          }
+        },
+        {
+          "incidentId": "f3702712-5f95-431d-b94e-ccf6530d5ee2",
+          "ruleId": "Binding.0006",
+          "projectPath": "LegacyWebForms.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Manual redirect for Newtonsoft.Json targets 13.0.0.0 but auto-generation would target 13.0.3 (MSB3836 conflict)",
+              "protected": "Manual redirect for Newtonsoft.Json targets 13.0.0.0 but auto-generation would target 13.0.3 (MSB3836 conflict)"
+            },
+            "kind": "File",
+            "path": "Web.config",
+            "snippet": "Manual redirect for Newtonsoft.Json targets 13.0.0.0 but auto-generation would target 13.0.3 (MSB3836 conflict)",
+            "protectedSnippet": "Manual redirect for Newtonsoft.Json targets 13.0.0.0 but auto-generation would target 13.0.3 (MSB3836 conflict)",
+            "properties": {
+              "AssemblyName": "Newtonsoft.Json",
+              "AssemblyCurrentVersion": "13.0.0.0",
+              "AssemblyNewVersion": "13.0.3"
+            }
+          }
+        },
+        {
+          "incidentId": "515bc095-198f-44dd-b802-526b118aabcc",
+          "ruleId": "Binding.0006",
+          "projectPath": "LegacyWebForms.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Manual redirect for WebGrease targets 1.6.5135.21930 but auto-generation would target 1.6.0 (MSB3836 conflict)",
+              "protected": "Manual redirect for WebGrease targets 1.6.5135.21930 but auto-generation would target 1.6.0 (MSB3836 conflict)"
+            },
+            "kind": "File",
+            "path": "Web.config",
+            "snippet": "Manual redirect for WebGrease targets 1.6.5135.21930 but auto-generation would target 1.6.0 (MSB3836 conflict)",
+            "protectedSnippet": "Manual redirect for WebGrease targets 1.6.5135.21930 but auto-generation would target 1.6.0 (MSB3836 conflict)",
+            "properties": {
+              "AssemblyName": "WebGrease",
+              "AssemblyCurrentVersion": "1.6.5135.21930",
+              "AssemblyNewVersion": "1.6.0"
+            }
+          }
+        },
+        {
+          "incidentId": "de78c6e6-2db1-4f4a-b7ae-d19f7896c437",
+          "ruleId": "Binding.0007",
+          "projectPath": "LegacyWebForms.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Binding redirect for Newtonsoft.Json targets 13.0.0.0 but package provides 13.0.3",
+              "protected": "Binding redirect for Newtonsoft.Json targets 13.0.0.0 but package provides 13.0.3"
+            },
+            "kind": "File",
+            "path": "Web.config",
+            "snippet": "Binding redirect for Newtonsoft.Json targets 13.0.0.0 but package provides 13.0.3",
+            "protectedSnippet": "Binding redirect for Newtonsoft.Json targets 13.0.0.0 but package provides 13.0.3",
+            "properties": {
+              "AssemblyName": "Newtonsoft.Json",
+              "AssemblyCurrentVersion": "13.0.0.0",
+              "AssemblyNewVersion": "13.0.3"
+            }
+          }
+        }
+      ],
+      "features": []
+    }
+  ],
+  "rules": {
+    "NuGet.0002": {
+      "id": "NuGet.0002",
+      "isFeature": false,
+      "description": "NuGet package upgrade is recommended for selected target framework.\n\nStandard .NET packages are recommended to have versions matching version of .NET that project targets.\n\nSome other packages also are known to work better for selected target frameworks.",
+      "label": "NuGet package upgrade is recommended",
+      "severity": "Potential",
+      "effort": 1,
+      "links": [
+        {
+          "url": "https://go.microsoft.com/fwlink/?linkid=2262530",
+          "isCustom": false
+        }
+      ]
+    },
+    "NuGet.0001": {
+      "id": "NuGet.0001",
+      "isFeature": false,
+      "description": "NuGet package is incompatible with selected target framework.\n\nPackage needs to be upgraded to a version supporting selected project target framework. If there no new package versions supporting new target framework, different package needs to be used and all code needs to be upgraded to new API.",
+      "label": "NuGet package is incompatible",
+      "severity": "Mandatory",
+      "effort": 1,
+      "links": [
+        {
+          "url": "https://go.microsoft.com/fwlink/?linkid=2262529",
+          "isCustom": false
+        }
+      ]
+    },
+    "NuGet.0003": {
+      "id": "NuGet.0003",
+      "isFeature": false,
+      "description": "NuGet package functionality is included with framework reference.\n\nPackage needs to be removed.",
+      "label": "NuGet package functionality is included with framework reference",
+      "severity": "Mandatory",
+      "effort": 1,
+      "links": [
+        {
+          "url": "https://go.microsoft.com/fwlink/?linkid=2262609",
+          "isCustom": false
+        }
+      ]
+    },
+    "NuGet.0005": {
+      "id": "NuGet.0005",
+      "isFeature": false,
+      "description": "NuGet package is deprecated.\n\nGo to its documentation and if there is a guidance for replacement of functionality provided by this package.",
+      "label": "NuGet package is deprecated",
+      "severity": "Optional",
+      "effort": 1,
+      "links": [
+        {
+          "url": "https://go.microsoft.com/fwlink/?linkid=2262531",
+          "isCustom": false
+        }
+      ]
+    },
+    "Project.0001": {
+      "id": "Project.0001",
+      "isFeature": false,
+      "description": "Project file needs to be converted to SDK-style. Modern .NET framework projects require a change in the project file format and use SDK corresponding to project flavor and functionality.",
+      "label": "Project file needs to be converted to SDK-style",
+      "severity": "Mandatory",
+      "effort": 1,
+      "links": [
+        {
+          "title": "Overview of porting from .NET Framework to .NET",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2265227",
+          "isCustom": false
+        },
+        {
+          "title": ".NET project SDKs",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2265226",
+          "isCustom": false
+        }
+      ]
+    },
+    "Project.0002": {
+      "id": "Project.0002",
+      "isFeature": false,
+      "description": "Project\u0027s target framework(s) needs to be changed to the new target framework that you selected for this upgrade.\n\nDuring upgrade target framework will be adjusted to corresponding platform when applicable. In some cases project would result in multiple target frameworks after the upgrade if it was using features that now have their own platforms in modern .NET frameworks (windows, iOS, Android etc).",
+      "label": "Project\u0027s target framework(s) needs to be changed",
+      "severity": "Mandatory",
+      "effort": 1,
+      "links": [
+        {
+          "title": "Overview of porting from .NET Framework to .NET",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2265227",
+          "isCustom": false
+        },
+        {
+          "title": ".NET project SDKs",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2265226",
+          "isCustom": false
+        }
+      ]
+    },
+    "Feature.1000": {
+      "id": "Feature.1000",
+      "isFeature": true,
+      "description": "Convert application initialization code from Global.asax.cs to .NET Core and clean up Global.asax.cs.",
+      "label": "Convert application initialization code from Global.asax.cs to .NET Core and clean up Global.asax.cs",
+      "severity": "Mandatory",
+      "effort": 1,
+      "links": [
+        {
+          "url": "https://go.microsoft.com/fwlink/?linkid=2265227",
+          "isCustom": false
+        }
+      ]
+    },
+    "Binding.0006": {
+      "id": "Binding.0006",
+      "isFeature": false,
+      "description": "An explicit binding redirect targets a different version than what auto-generation would produce. MSBuild will throw MSB3836 conflict error because it cannot determine which redirect wins.",
+      "label": "Manual redirect conflicts with auto-generated version",
+      "severity": "Mandatory",
+      "effort": 1,
+      "links": [
+        {
+          "title": "Assembly binding redirection",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2262689",
+          "isCustom": false
+        }
+      ]
+    },
+    "Binding.0007": {
+      "id": "Binding.0007",
+      "isFeature": false,
+      "description": "A binding redirect\u0027s newVersion is lower than the version provided by the NuGet package. This forced downgrade usually causes a load failure at runtime because the expected assembly version is not available.",
+      "label": "Binding redirect forces version downgrade",
+      "severity": "Potential",
+      "effort": 1,
+      "links": [
+        {
+          "title": "Assembly binding redirection",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2262689",
+          "isCustom": false
+        }
+      ]
+    }
+  }
+}
