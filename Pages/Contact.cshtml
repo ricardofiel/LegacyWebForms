@@ -1,0 +1,70 @@
+@page
+@model ContactModel
+@{
+    ViewData["Title"] = "Contact";
+}
+
+<main aria-labelledby="title">
+    <h2 id="title">@ViewData["Title"].</h2>
+    <h3>Your contact page.</h3>
+    <address>
+        One Microsoft Way<br />
+        Redmond, WA 98052-6399<br />
+        <abbr title="Phone">P:</abbr>
+        425.555.0100
+    </address>
+
+    <address>
+        <strong>Support:</strong> <a href="mailto:Support@example.com">Support@example.com</a><br />
+        <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
+    </address>
+
+    <hr />
+
+    <h3>Contact Form</h3>
+
+    @if (!Model.IsSubmitted)
+    {
+        <form method="post">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label asp-for="ContactInput.From" class="form-label">From:</label>
+                        <input asp-for="ContactInput.From" class="form-control" placeholder="Your name" />
+                    </div>
+                    <div class="mb-3">
+                        <label asp-for="ContactInput.Email" class="form-label">Email:</label>
+                        <input asp-for="ContactInput.Email" type="email" class="form-control" placeholder="your.email@example.com" />
+                    </div>
+                    <div class="mb-3">
+                        <label asp-for="ContactInput.Message" class="form-label">Message:</label>
+                        <textarea asp-for="ContactInput.Message" class="form-control" rows="5" placeholder="Your message"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    }
+    else
+    {
+        <div class="row">
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <strong>From:</strong><br />
+                    @Model.ContactInput.From
+                </div>
+                <div class="mb-3">
+                    <strong>Email:</strong><br />
+                    @Model.ContactInput.Email
+                </div>
+                <div class="mb-3">
+                    <strong>Message:</strong><br />
+                    @Model.ContactInput.Message
+                </div>
+                <span class="text-success">Message sent. Thank you!</span>
+            </div>
+        </div>
+    }
+</main>
